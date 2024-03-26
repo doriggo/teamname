@@ -1,0 +1,18 @@
+GTA<- c(156645, 152585, 153594, 165827, 187642, 185713, 154207)
+PUBG<- c(597194, 666779, 696202, 674007, 692311, 706785, 677738)
+APEX<- c(422284, 435806, 429892, 434299, 440940, 434411, 370949)
+CS<- c(1236270, 1235393, 1260109, 1345776, 1245530, 1237154, 1347519)
+
+names(GTA) <- paste(12:18, '일', sep="")
+names(PUBG) <- paste(12:18, '일', sep="")
+names(APEX) <- paste(12:18, '일', sep="")
+names(CS) <- paste(12:18, '일', sep="")
+
+sum<- GTA + PUBG + APEX + CS
+sum
+max.day<-sort(sum, decreasing=T)
+max.day
+
+salesD12=c(156645,597194,422284,1236270)
+names(salesD12)=c('GTA D12', 'PUBG D12', 'APEX D12', 'CS D12')
+salesD12
