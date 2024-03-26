@@ -16,3 +16,22 @@ max.day
 salesD12=c(156645,597194,422284,1236270)
 names(salesD12)=c('GTA D12', 'PUBG D12', 'APEX D12', 'CS D12')
 salesD12
+
+
+sum(salesD12)
+max(salesD12)
+min(salesD12)
+salesD12*0.9
+salesD12[salesD12>=500000]
+day.500000=salesD12[salesD12>=500000]
+names(day.500000)  
+names(salesD12[salesD12>=500000])
+
+length(salesD12[salesD12>500000])
+
+G2.sales=salesD12[2]
+salesD12[salesD12>G2.sales]
+
+salesD12[salesD12>G2.sales]
+length(salesD12[salesD12>500000])
+
