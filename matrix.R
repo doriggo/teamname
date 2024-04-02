@@ -21,16 +21,16 @@ names(APEX) <- paste(12:18, '일', sep="")
 names(CS) <- paste(12:18, '일', sep="")
 
 
-# 게임 총 접속자 수
+# 12일 총 접속자 수
 sum<- GTA + PUBG + APEX + CS
 sum
 sum(salesD12)
 
-# 게임 접속자 평균
+# 12일 접속자 평균
 avg<-sum(salesD12) / 4
 avg
 
-# 최대 접속자, 최소 접속자
+# 12일 최대 접속자, 최소 접속자
 max.day<-sort(sum, decreasing=T)
 max.day
 
@@ -41,7 +41,7 @@ salesD12=maxUser[,1]
 salesD12
 
 
-# 접속자 수 50만명 이상인 게임 목록
+# 12일 접속자 수 50만명 이상인 게임 목록
 salesD12[salesD12>=500000]
 day.500000=salesD12[salesD12>=500000]
 names(day.500000)  
