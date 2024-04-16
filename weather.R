@@ -4,6 +4,7 @@ setwd('G:\\내 드라이브\\대학\\2-1\\확률과통계\\Rstudio 작업공간'
 weather <- read.csv('weather.csv', header=T)
 head(weather)
 
+# for문을 이용해 일주일치 날씨 입력하기
 for (i in 1:7) {
   date <- dlgInput('week date')$res
   point <- as.numeric(dlgInput('point')$res)
@@ -13,7 +14,7 @@ for (i in 1:7) {
   max <- as.numeric(dlgInput('max')$res)
   weather <- rbind(weather, c(date, point, name,average, min, max))
   
-  
+  # if문을 이용해 일주일치 입력된 최저기온 출력하기.
   if(min < 0) {
     cat(date, "의 최저기온은", min, "으로 매우 춥습니다.\n")
   }
