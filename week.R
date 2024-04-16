@@ -19,7 +19,7 @@ for (i in 1:2) {
     cat(date, "의 날씨는", min, "입니다.\n")
   }
   else {
-    cat(date, "의 날씨는" min, "입니다.\n")
+    cat(date, "의 날씨는", min, "입니다.\n")
   }
 }
 
