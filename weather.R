@@ -4,7 +4,7 @@ setwd('G:\\내 드라이브\\대학\\2-1\\확률과통계\\Rstudio 작업공간'
 weather <- read.csv('weather.csv', header=T)
 head(weather)
 
-for (i in 1:2) {
+for (i in 1:7) {
   date <- dlgInput('week date')$res
   point <- as.numeric(dlgInput('point')$res)
   name <- dlgInput('name')$res
