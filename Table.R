@@ -69,16 +69,12 @@ pie(table(ps),main='배그 평가표',
 par(mfrow=c(2,2), mar=c(3,3,4,2))
 
 barplot(ds, main='My Hobby', 
-        #막대그래프 색 지정하기
         col = c('blue','red','green','yellow'),
-        #x축 y축에 설명 붙이기
         xlab='취미', ylab='(명)')
 
 barplot(as, main='인구 추정',
         col=c('blue', 'red'),
-        #각각의 막대로 표현하기
         beside = TRUE,
-        #범례 추가하기
         legend.text = c('남자', '여자'),
         args.legend = list(x='topright', bty='n',
                            inset=c(-0.25,0)))
